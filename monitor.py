@@ -93,6 +93,7 @@ class AnticheatTable():
         self.phil[i] = False
         self.neating.value -= 1
         self.freefork.notify_all()
+        self.mutex.release()
 	
 	
 	
